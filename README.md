@@ -1,6 +1,60 @@
 # Machine-Learning-AI
 
+# Part 1: Depth Limited Search(DLS) and A/A* Search
+Robotic Path Planning on Topographic Maps
 
+## Project Summary
+
+This project involves implementing a Python 3 program, named "planpath," to plan a path for ROBBIE the robot through a topographic map. The map consists of normal and mountainous terrain tiles, and ROBBIE aims to navigate from a starting position to a goal position. Two search algorithms, Depth-Limited Search (DLS) and A* (A or A*), are implemented within a single Graph/Treesearch procedure, allowing for different search strategies using various ordering functions.
+
+### Implementation Details
+
+1. **Transition Rules:**
+   - ROBBIE can move to one of the eight surrounding tiles but cannot traverse mountainous tiles.
+   - Diagonal moves are restricted if one of the diagonal directions contains a mountainous tile.
+
+2. **Path Cost:**
+   - Diagonal moves have a cost of 1, while other moves have a cost of 2.
+
+3. **Implemented Algorithms:**
+   - Depth-Limited Search (DLS)
+   - A* (A or A*) with a proposed heuristic function.
+
+4. **Heuristic Function:**
+   - A heuristic function is implemented for A* to guide the search process.
+   - Admissibility and monotonicity of the heuristic function are determined and explained.
+
+5. **Tie-Breaking Rules:**
+   - Tie-breaking rules are implemented to handle cases where multiple options have equal merit.
+
+6. **Input Format:**
+- The first line specifies the number of rows and columns in the map.
+- Subsequent lines contain the map, with values for normal, mountainous, start, and goal tiles.
+
+7. **Output Format:**
+- The program produces a sequence of moves, accumulated costs, and ROBBIE's position after each move.
+- If no path is found, the output states "NO-PATH."
+
+
+
+### Command-Line Execution
+
+The program can be executed using the following command:
+Please note that A is A/A* Algorithm while D is the DLS algorithm
+
+```bash
+python planpath.py INPUT\inputi.txt OUTPUT\outputi.txt Flag Algorithm
+```
+
+For example
+
+```bash
+python planpath.py INPUT\input1.txt OUTPUT\output1.txt 5 D
+python planpath.py INPUT\input1.txt OUTPUT\output1.txt 5 A
+```
+
+<br>
+<br>
 
 
 # Part 2: Decision Tree Learning for Chess End-Game Prediction
