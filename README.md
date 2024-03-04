@@ -1,4 +1,8 @@
 # Machine-Learning-AI
+This repo includes the study learnt from Machine Learning unit in Monash University.
+It includes
+- [Part 1: Depth Limited Search(DLS) and A/A* Search](#part-1-depth-limited-searchdls-and-aa-search)
+- [Part 2: Decision Tree Learning for Chess End-Game Prediction](#part-2-decision-tree-learning-for-chess-end-game-prediction)
 
 # Part 1: Depth Limited Search(DLS) and A/A* Search
 Robotic Path Planning on Topographic Maps
@@ -6,6 +10,8 @@ Robotic Path Planning on Topographic Maps
 ## Project Summary
 
 This project involves implementing a Python 3 program, named "planpath," to plan a path for ROBBIE the robot through a topographic map. The map consists of normal and mountainous terrain tiles, and ROBBIE aims to navigate from a starting position to a goal position. Two search algorithms, Depth-Limited Search (DLS) and A* (A or A*), are implemented within a single Graph/Treesearch procedure, allowing for different search strategies using various ordering functions.
+
+The code is in folder `Depth Limited Search (DLS) & A Search`.
 
 ### Implementation Details
 
@@ -62,6 +68,8 @@ python planpath.py INPUT\input1.txt OUTPUT\output1.txt 5 A
 ## Project Summary
 
 This project involves implementing a decision tree learning algorithm, specifically designed for datasets with binary features and labels. The algorithm employs the maximum information gain heuristic as its splitting rule. Additionally, the implementation includes an extension to limit the depth of the tree, allowing for a more controlled and interpretable model.
+
+The code is in folder `Decision Tree`.
 
 ## Implementation Details
 
